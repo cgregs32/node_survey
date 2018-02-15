@@ -6,7 +6,6 @@ const keys = require('../config/keys');
 //one argument - we want to fetch from mongoose
 const User = mongoose.model('users');
 
-//done is a callback within passport used after doing some stuff.
 passport.serializeUser((user, done) => {
   done(null, user.id);
 });
